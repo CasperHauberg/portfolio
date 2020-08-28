@@ -1,0 +1,156 @@
+@import './node_modules/bootstrap/scss/bootstrap.scss';
+
+$primary-color: #181818;
+$secondary-color: #202020;
+$primary-text-color: #ccc;
+$secondary-text-color: #9f9f9f;
+$icon-color: #727272;
+$aux-color: #323232;
+
+.btn-primary {
+	background-image: linear-gradient(
+		to right bottom,
+		#973ab4,
+		#fd1d1d,
+		#fcb045
+	);
+	border-color: $aux-color;
+}
+
+.btn-primary:hover {
+	background-image: linear-gradient(
+		to right bottom,
+		#973ab4,
+		#fd1d1d,
+		#fcb045
+	);
+	border-color: $aux-color;
+}
+
+.text-secondary,
+.lead,
+label {
+	color: $secondary-text-color;
+}
+
+i {
+	color: $icon-color;
+}
+
+body {
+	background-color: $primary-color;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+	background-color: $secondary-color;
+}
+
+.cover-1 {
+	position: relative;
+	background: url('./img/code.jpg') center;
+	background-size: cover;
+}
+
+.cover-2 {
+	position: relative;
+	background: url('./img/pexels-pixabay-270348.jpg') center;
+	background-size: cover;
+}
+
+.dark-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.placeholder {
+	width: 100%;
+	height: 250px;
+	background-color: $secondary-color;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card {
+	background-color: $secondary-color;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+label {
+	color: $primary-text-color;
+}
+
+.input-group-text {
+	background-color: $aux-color;
+	border: $aux-color solid 1px;
+}
+
+.form-control {
+	background: $primary-color;
+	border: $aux-color solid 1px;
+}
+
+.form-control:focus {
+	box-shadow: none;
+}
+
+.form-main-container {
+	height: 80vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.form-header-container {
+	width: 100vw;
+	height: 10vh;
+
+	border-bottom: $aux-color 1px solid;
+}
+
+.form-footer-container {
+	width: 100vw;
+	height: 10vh;
+	text-align: center;
+}
+
+input:focus {
+	border: red;
+}
+
+.form-header-inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+img {
+	width: 100%;
+	border-radius: 100%;
+	text-align: center;
+	filter: grayscale(100);
+}
+
+.hero {
+	width: 100%;
+	height: 100vh;
+	background: url('./img/pexels-olia-danilevich-4974915.jpg')
+		center;
+	background-size: cover;
+	position: relative;
+}
+
+.navbar {
+	background-color: rgba(32, 32, 32, 0.95);
+}
+
+.nav-item {
+	margin-right: 0.5rem;
+	margin-left: 0.5rem;
+}
